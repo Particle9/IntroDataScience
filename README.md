@@ -1,13 +1,83 @@
-# Intro to Data Science Cheat Sheet - Organized
+# Introduction to Data Science - Complete Learning Repository
 
-This repository contains a comprehensive Data Science cheat sheet, now **reorganized into 6 focused notebooks** for easier learning and reference.
+[![Python](https://img.shields.io/badge/Python-3.8%2B-blue.svg)](https://www.python.org/downloads/)
+[![Jupyter](https://img.shields.io/badge/Jupyter-Notebook-orange.svg)](https://jupyter.org/)
+[![License](https://img.shields.io/badge/License-Educational-green.svg)](LICENSE)
 
-## 📚 Notebook Structure
+A comprehensive collection of Data Science materials including cheat sheets, lecture notes, assignments, and exam preparations. This repository covers fundamental topics from probability theory and statistical learning to machine learning algorithms and high-dimensional data analysis.
 
-The original massive cheatsheet (3200+ lines) has been split into logical topic-focused notebooks:
+## 📋 Table of Contents
 
-### [1_Risk_Supervised_Learning.ipynb](1_Risk_Supervised_Learning.ipynb)
+- [Overview](#-overview)
+- [Repository Structure](#-repository-structure)
+- [Organized Cheat Sheets](#-organized-cheat-sheets)
+- [Getting Started](#-getting-started)
+- [Learning Paths](#-learning-paths)
+- [Topics Covered](#-topics-covered)
+- [Installation](#-installation)
+- [Usage](#-usage)
+- [Contributing](#-contributing)
+
+## 🎯 Overview
+
+This repository serves as a complete learning resource for Introduction to Data Science, containing:
+
+- **6 Organized Topic-Focused Cheat Sheets** - Modular notebooks covering core data science concepts
+- **Lecture Notes** - Comprehensive chapter-by-chapter toolkit notebooks
+- **Assignments** - 4 practical assignments with solutions
+- **Past Exams** - Previous exam papers (2022-2025) for practice
+- **Utility Functions** - Reusable Python functions for common data science tasks
+- **All from-scratch implementations** - Educational code for deep understanding
+
+## 📁 Repository Structure
+
+```
+├── cheatsheet/                    # 📚 6 Organized Topic-Focused Notebooks
+│   ├── 1_Risk_Supervised_Learning.ipynb
+│   ├── 2_Estimation_Bias_Variance.ipynb
+│   ├── 3_Sampling_RNG.ipynb
+│   ├── 4_Markov_Chains.ipynb
+│   ├── 5_Pattern_Recognition.ipynb
+│   └── 6_Dimensionality_Reduction.ipynb
+│
+├── Lecture Notes/                 # 🎓 Chapter-by-Chapter Toolkits
+│   ├── Chapter4_Risk_Toolkit.ipynb
+│   ├── Chapter5_6_Estimation_RV_Generation_Toolkit.ipynb
+│   ├── Chapter7_Finite_Markov_Chains_Toolkit.ipynb
+│   ├── Chapter8_Pattern_Recognition_VC_Toolkit.ipynb
+│   ├── Chapter10_High_Dimension_Toolkit.ipynb
+│   ├── Chapter11_Dimensionality_Reduction_Toolkit.ipynb
+│   └── original/                  # Original lecture notebooks
+│
+├── Assignments/                   # 📝 Course Assignments
+│   ├── Assignment_1B.ipynb
+│   ├── Assignment_2.ipynb
+│   ├── Assignment_3.ipynb
+│   └── Assignment_4.ipynb
+│
+├── Prev Exam/                     # 🎯 Past Examination Papers
+│   ├── ExamJanuary_2022_problem.ipynb
+│   ├── ExamJanuary_2023_problem.ipynb
+│   ├── ExamJanuary_2024_problem.ipynb
+│   ├── Exam_ang_tent25.ipynb
+│   ├── data/                      # Exam datasets
+│   └── Utils.py                   # Helper functions for exams
+│
+├── Utils.py                       # 🛠️ General utility functions
+├── cheatsheet.ipynb              # 📖 Original comprehensive cheatsheet
+├── sklearn_cheatsheet.ipynb      # 🔧 Scikit-learn quick reference
+└── README.md                      # 📘 This file
+```
+
+## 📚 Organized Cheat Sheets
+
+The original massive cheatsheet (3200+ lines) has been reorganized into **6 focused, modular notebooks** for easier learning and reference:
+
+### 🎲 [1. Risk & Supervised Learning](cheatsheet/1_Risk_Supervised_Learning.ipynb)
+
 **Fundamentals of supervised learning and model evaluation**
+
+**Topics Covered:**
 - Loss functions (MSE, MAE, Log Loss, Zero-One)
 - Average risk calculation
 - Train/Test/Validation split strategies
@@ -19,8 +89,11 @@ The original massive cheatsheet (3200+ lines) has been split into logical topic-
 
 ---
 
-### [2_Estimation_Bias_Variance.ipynb](2_Estimation_Bias_Variance.ipynb)
+### 📊 [2. Estimation & Bias-Variance](cheatsheet/2_Estimation_Bias_Variance.ipynb)
+
 **Statistical estimation theory and the bias-variance tradeoff**
+
+**Topics Covered:**
 - Monte Carlo estimation of bias and variance
 - Bootstrap resampling methods
 - Bootstrap confidence intervals
@@ -31,8 +104,11 @@ The original massive cheatsheet (3200+ lines) has been split into logical topic-
 
 ---
 
-### [3_Sampling_RNG.ipynb](3_Sampling_RNG.ipynb)
+### 🎰 [3. Sampling & Random Number Generation](cheatsheet/3_Sampling_RNG.ipynb)
+
 **Random number generation and sampling techniques**
+
+**Topics Covered:**
 - Basic random number generators (RNG)
 - Linear Congruential Generator (LCG)
 - Inversion sampling method
@@ -45,8 +121,11 @@ The original massive cheatsheet (3200+ lines) has been split into logical topic-
 
 ---
 
-### [4_Markov_Chains.ipynb](4_Markov_Chains.ipynb) ⭐ *Largest section*
+### ⛓️ [4. Markov Chains](cheatsheet/4_Markov_Chains.ipynb) ⭐ *Most Comprehensive*
+
 **Complete theory and practice of Markov chains**
+
+**Topics Covered:**
 - Transition matrices (validation, estimation, simulation)
 - N-step transition probabilities
 - First passage time and k-th passage time
@@ -69,8 +148,11 @@ The original massive cheatsheet (3200+ lines) has been split into logical topic-
 
 ---
 
-### [5_Pattern_Recognition.ipynb](5_Pattern_Recognition.ipynb)
+### 🎯 [5. Pattern Recognition](cheatsheet/5_Pattern_Recognition.ipynb)
+
 **Classification metrics and binary classification**
+
+**Topics Covered:**
 - Confusion matrix (TP, TN, FP, FN)
 - Precision, recall, and accuracy
 - F1 score and F-beta score
@@ -83,8 +165,11 @@ The original massive cheatsheet (3200+ lines) has been split into logical topic-
 
 ---
 
-### [6_Dimensionality_Reduction.ipynb](6_Dimensionality_Reduction.ipynb)
+### 🔍 [6. Dimensionality Reduction](cheatsheet/6_Dimensionality_Reduction.ipynb)
+
 **High-dimensional data analysis and PCA**
+
+**Topics Covered:**
 - Distance concentration phenomenon (curse of dimensionality)
 - Principal Component Analysis (PCA) using SVD
 - Choosing number of components (variance explained)
@@ -97,84 +182,223 @@ The original massive cheatsheet (3200+ lines) has been split into logical topic-
 
 ---
 
-## 🎯 Suggested Learning Paths
+## 🚀 Getting Started
 
-### For Beginners (Machine Learning Fundamentals)
-1. Start with **Notebook 1** (Risk & Supervised Learning)
-2. Then **Notebook 5** (Pattern Recognition)
-3. Then **Notebook 6** (Dimensionality Reduction)
+### Prerequisites
 
-### For Statistics Focus
-1. **Notebook 2** (Estimation & Bias-Variance)
-2. **Notebook 3** (Sampling & RNG)
-3. **Notebook 4** (Markov Chains)
+- Python 3.8 or higher
+- Jupyter Notebook or JupyterLab (or VS Code with Jupyter extension)
+- Basic knowledge of Python and linear algebra
 
-### For Applied Data Scientists
-- **Notebooks 1, 5, 6** cover the most immediately practical topics
-- **Notebook 4** (Markov Chains) is valuable for understanding sequential/temporal data
+### Quick Start
 
-### For Theory-Minded Students
-- Work through **all notebooks in order** (1→6)
-- **Notebook 4** (Markov Chains) contains the deepest theoretical content
+1. **Clone the repository:**
+   ```bash
+   git clone <repository-url>
+   cd "Intro To Data Science Cheat Sheet"
+   ```
+
+2. **Install dependencies:**
+   ```bash
+   pip install -r requirements.txt
+   # Or install manually:
+   pip install numpy scipy scikit-learn matplotlib pandas jupyter
+   ```
+
+3. **Launch Jupyter:**
+   ```bash
+   jupyter notebook
+   # Or use JupyterLab:
+   jupyter lab
+   ```
+
+4. **Start learning:**
+   - Navigate to `cheatsheet/` folder
+   - Open any notebook (start with `1_Risk_Supervised_Learning.ipynb`)
+   - Run cells and explore!
 
 ---
 
-## 💡 How to Use These Notebooks
+## 🎯 Learning Paths
 
-Each notebook is **self-contained** with:
-- ✅ Clear explanations of concepts
-- ✅ Mathematical formulas (rendered with LaTeX)
-- ✅ Complete, runnable Python code
-- ✅ Function implementations you can use directly
-- ✅ "What is this?" and "When to use" sections
+Choose your learning path based on your goals and background:
 
-**To get started:**
+### 🌟 Path 1: Machine Learning Fundamentals (Recommended for Beginners)
+**Duration: ~2-3 weeks**
+
+1. [Risk & Supervised Learning](cheatsheet/1_Risk_Supervised_Learning.ipynb) - Learn model evaluation
+2. [Pattern Recognition](cheatsheet/5_Pattern_Recognition.ipynb) - Master classification metrics
+3. [Dimensionality Reduction](cheatsheet/6_Dimensionality_Reduction.ipynb) - Handle high-dimensional data
+
+**Why this path?** Covers the most practical, immediately applicable machine learning concepts.
+
+### 📈 Path 2: Statistical Foundations
+**Duration: ~3-4 weeks**
+
+1. [Estimation & Bias-Variance](cheatsheet/2_Estimation_Bias_Variance.ipynb) - Statistical inference
+2. [Sampling & RNG](cheatsheet/3_Sampling_RNG.ipynb) - Random sampling techniques
+3. [Markov Chains](cheatsheet/4_Markov_Chains.ipynb) - Stochastic processes
+
+**Why this path?** Builds deep understanding of probability and statistics underlying ML.
+
+### 🚀 Path 3: Complete Data Scientist Track
+**Duration: ~6-8 weeks**
+
+Work through **all notebooks in order** (1→6), supplemented with:
+- Lecture notes for theoretical depth
+- Assignments for hands-on practice
+- Past exams for assessment preparation
+
+**Why this path?** Comprehensive coverage from theory to practice.
+
+### 🎓 Path 4: Exam Preparation
+**Duration: ~2-3 weeks (intensive)**
+
+1. Review all **6 cheat sheet notebooks** quickly
+2. Work through **past exams** in `Prev Exam/` folder
+3. Complete **assignments** for practice
+4. Use `sklearn_cheatsheet.ipynb` for quick reference
+
+**Why this path?** Optimized for exam success with focused practice.
+
+---
+
+## 📖 Topics Covered
+
+### Core Machine Learning
+- Supervised learning fundamentals
+- Loss functions and risk minimization
+- Model evaluation and validation
+- Hyperparameter tuning
+- Cross-validation techniques
+- Classification metrics (precision, recall, F1, ROC-AUC)
+- Logistic regression
+
+### Statistical Methods
+- Monte Carlo estimation
+- Bootstrap methods
+- Bias-variance tradeoff
+- Confidence intervals
+- Statistical inference
+- Sampling techniques
+- Random number generation
+
+### Advanced Topics
+- Markov chains and stochastic processes
+- Stationary distributions
+- Convergence analysis
+- Principal Component Analysis (PCA)
+- Dimensionality reduction
+- Curse of dimensionality
+- Feature engineering
+
+### Computational Techniques
+- Linear Congruential Generators
+- Inversion sampling
+- Rejection sampling
+- Importance sampling
+- Monte Carlo integration
+- Numerical optimization
+
+---
+
+## 📦 Installation
+
+### Option 1: Using pip (Recommended)
+
 ```bash
-# Open in Jupyter
+# Install core dependencies
+pip install numpy scipy scikit-learn matplotlib pandas jupyter
+
+# Optional: Install additional visualization libraries
+pip install seaborn plotly
+```
+
+### Option 2: Using conda
+
+```bash
+# Create a new environment
+conda create -n datascience python=3.9
+
+# Activate the environment
+conda activate datascience
+
+# Install packages
+conda install numpy scipy scikit-learn matplotlib pandas jupyter notebook
+```
+
+### Option 3: Using requirements.txt
+
+Create a `requirements.txt` file:
+```txt
+numpy>=1.21.0
+scipy>=1.7.0
+scikit-learn>=1.0.0
+matplotlib>=3.4.0
+pandas>=1.3.0
+jupyter>=1.0.0
+```
+
+Then install:
+```bash
+pip install -r requirements.txt
+```
+
+---
+
+## 💻 Usage
+
+### Using Jupyter Notebooks
+
+```bash
+# Start Jupyter Notebook
 jupyter notebook
 
-# Or open in VS Code with Jupyter extension
-code .
+# Or start JupyterLab (modern interface)
+jupyter lab
 ```
 
-Then simply open any notebook and run the cells!
+Navigate to any notebook and start exploring!
 
----
+### Using VS Code
 
-## 📦 Dependencies
+1. Install the [Jupyter extension](https://marketplace.visualstudio.com/items?itemName=ms-toolsai.jupyter)
+2. Open any `.ipynb` file
+3. Select Python kernel
+4. Run cells with Shift+Enter
 
-All notebooks use standard scientific Python libraries:
-- `numpy` - Numerical computing
-- `scipy` - Scientific computing (for stats, optimization)
-- `sklearn` (scikit-learn) - Machine learning utilities
+### Running Code Snippets
 
-Install with:
-```bash
-pip install numpy scipy scikit-learn
+All functions are self-contained and can be imported:
+
+```python
+# Import from Utils.py
+from Utils import *
+
+# Or copy functions directly from notebooks
+# All implementations are educational and well-documented
 ```
 
 ---
 
-## 📖 Original Cheatsheet
+## 📚 Additional Resources
 
-The complete original cheatsheet is still available as [cheatsheet.ipynb](cheatsheet.ipynb) if you prefer a single comprehensive reference.
+### Included in This Repository
+
+- **Original Cheatsheet**: [cheatsheet.ipynb](cheatsheet.ipynb) - Single comprehensive reference (3200+ lines)
+- **Scikit-learn Cheatsheet**: [sklearn_cheatsheet.ipynb](sklearn_cheatsheet.ipynb) - Quick sklearn reference
+- **Utils Module**: [Utils.py](Utils.py) - Reusable utility functions
+- **Lecture Notes**: Detailed chapter-by-chapter breakdowns with theory
+- **All of Statistics**: Additional statistical theory materials
+
+### Learning Features
+
+Each notebook includes:
+- ✅ **Clear explanations** - "What is this?" and "When to use" sections
+- ✅ **Mathematical formulas** - LaTeX-rendered equations with variable definitions
+- ✅ **Runnable code** - Complete, executable Python implementations
+- ✅ **Docstrings** - Detailed function documentation
+- ✅ **Examples** - Practical use cases and demonstrations
+- ✅ **From-scratch implementations** - No black boxes, understand everything
 
 ---
-
-## 🤝 Contributing
-
-This is a learning resource! If you find errors or have improvements:
-1. The content is organized for clarity and ease of learning
-2. Each function includes docstrings and explanations
-3. All mathematical notation is clearly defined
-
----
-
-## 📝 Notes
-
-- All code is **from-scratch implementations** for educational purposes
-- Functions are designed to be **readable and understandable**, not necessarily optimized
-- Mathematical formulas use LaTeX notation for clarity
-- Examples and use cases are provided throughout
-
-**Happy Learning! 🚀**
